@@ -19,7 +19,7 @@ Positioning the nav
 	left: 0;
 	width: 100%;
 	line-height: 1em;
-	background-color: rgba(50,85,125,0.8);
+	background-color: rgba(52, 118, 181, 0.8);
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	position: relative;
@@ -42,16 +42,22 @@ Main, dropdown & mobile nav
 #sidecarNav,
 #headerNav nav .subnav,
 #sidecarNav nav .subnav {
-  background-color: rgb(34, 53, 74);
+  background-color: rgba(52, 118, 181, 1);
 }
 
-#headerNav nav a:hover,
+/*#headerNav nav a:hover,
 #sidecarNav nav a:hover,
 #headerNav nav a:visited:hover,
 #sidecarNav nav a:visited:hover,
 #headerNav nav label:hover,
 #sidecarNav nav label:hover {
   color: aqua;
+}*/
+
+.nav-button-corner-style-rounded.enable-nav-button #headerNav nav>div:not(.folder):last-child a,
+.nav-button-corner-style-rounded.enable-nav-button #sidecarNav nav>div:not(.folder):last-child a {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 
 /*******************************************************
