@@ -1,0 +1,92 @@
+/*******************************************************
+Positioning the inner menu nav
+*******************************************************/
+.header-inner {
+	width: 960px;
+	padding: 20px 20px;
+}
+
+/*******************************************************
+Positioning the nav
+*******************************************************/
+#header {
+	padding: 0 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 1000;
+	top: 30em;
+	left: 0;
+	width: 100%;
+	line-height: 1em;
+	background-color: rgba(50,85,125,0.8);
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	position: relative;
+}
+
+/*******************************************************
+Positioning & sizing the hero image area
+*******************************************************/
+.collection-type-page .banner-thumbnail-wrapper,
+.view-list .banner-thumbnail-wrapper,
+.collection-type-index .banner-thumbnail-wrapper {
+  top: -100px;
+  padding: 163px 0;
+  height: 314px;
+}
+
+/*******************************************************
+Main, dropdown & mobile nav
+*******************************************************/
+#sidecarNav,
+#headerNav nav .subnav,
+#sidecarNav nav .subnav {
+  background-color: rgb(34, 53, 74);
+}
+
+#headerNav nav a:hover,
+#sidecarNav nav a:hover,
+#headerNav nav a:visited:hover,
+#sidecarNav nav a:visited:hover,
+#headerNav nav label:hover,
+#sidecarNav nav label:hover {
+  color: aqua;
+}
+
+/*******************************************************
+Media Queries
+*******************************************************/
+@media only screen and (min-width: 717px) {
+  /*Nav positioning*/
+  #header {
+    top: 30em;
+  }
+}
+@media only screen and (max-width: 641px) {
+  /*Nav positioning*/
+  #header {
+    top: 25.75em;
+  }
+  .view-list .banner-thumbnail-wrapper,
+  .collection-type-page .banner-thumbnail-wrapper,
+  .collection-type-index .banner-thumbnail-wrapper {
+      height: 238px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  /*Nav positioning*/
+  #header {
+    top: 22.75em;
+  }
+  /*Page positioning*/
+  #page {
+  	padding: 0 20px;
+  	margin-top: -60px;
+  }
+  .view-list .banner-thumbnail-wrapper,
+  .collection-type-page .banner-thumbnail-wrapper,
+  .collection-type-index .banner-thumbnail-wrapper {
+    height: 183px;
+  }
+}
