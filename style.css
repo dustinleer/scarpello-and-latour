@@ -7,7 +7,7 @@ General Styles
 /*Main header button*/
 body:not(.collection-type-gallery).banner-button-style-raised .desc-wrapper p:last-child>a {
 	border-radius: 5px;
-  	box-shadow: 0 4px 0 0 #143f68;
+	box-shadow: 0 4px 0 0 #143f68;
 	-moz-box-shadow: 0 4px 0 0 #143f68;
 	-webkit-box-shadow: 0 4px 0 0 #143f68;
 }
@@ -34,8 +34,7 @@ Header
 
 /*Positioning the inner menu nav*/
 .header-inner {
-  width: 960px;
-  padding: 20px 20px;
+	width: 75%;
 }
 
 /*******************************************************
@@ -47,7 +46,7 @@ Positioning the nav
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	z-index: 1000;
-	top: 30em;
+	top: 36em;
 	left: 0;
 	width: 100%;
 	line-height: 1em;
@@ -109,26 +108,26 @@ Page margin correction
 Footer
 *******************************************************/
 #preFooter {
-  border-top: 1px solid #333;
+	border-top: 1px solid #333;
 }
 
 .footer-inner {
-  padding: 64px 32px;
-  font-size: 13px;
+	padding: 64px 32px;
+	font-size: 13px;
 }
 
 #footer .html-block a, #footer .html-block a:visited {
-  color: #3476b5;
-  border-bottom: 0px solid #333;
-  text-decoration: underline;
+	color: #3476b5;
+	border-bottom: 0px solid #333;
+	text-decoration: underline;
 }
 
 /*******************************************************
 Home Page
 *******************************************************/
 img[src*="icon"] {
-    background-color: #3476b5;
-    border-radius: 5px;
+	background-color: #3476b5;
+	border-radius: 5px;
 }
 /*******************************************************
 Media Queries
@@ -136,7 +135,7 @@ Media Queries
 @media only screen and (min-width: 717px) {
 	/*Nav positioning*/
 	#header {
-		top: 30em;
+		top: 36em;
 	}
 }
 @media only screen and (max-width: 641px) {
@@ -153,7 +152,7 @@ Media Queries
 @media only screen and (max-width: 640px) {
 	/*Nav positioning*/
 	#header {
-		top: 22.75em;
+		top: 27.25em;
 	}
 	/*Page positioning*/
 	#page {
