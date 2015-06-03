@@ -31,9 +31,9 @@ Positioning & sizing the hero image area
 .collection-type-page .banner-thumbnail-wrapper,
 .view-list .banner-thumbnail-wrapper,
 .collection-type-index .banner-thumbnail-wrapper {
-  top: -100px;
-  padding: 163px 0;
-  height: 314px;
+	top: -100px;
+	padding: 163px 0;
+	height: 314px;
 }
 
 /*******************************************************
@@ -42,7 +42,7 @@ Main, dropdown & mobile nav
 #sidecarNav,
 #headerNav nav .subnav,
 #sidecarNav nav .subnav {
-  background-color: rgba(52, 118, 181, 1);
+	background-color: rgba(52, 118, 181, 1);
 }
 
 /*#headerNav nav a:hover,
@@ -51,7 +51,7 @@ Main, dropdown & mobile nav
 #sidecarNav nav a:visited:hover,
 #headerNav nav label:hover,
 #sidecarNav nav label:hover {
-  color: aqua;
+	color: aqua;
 }*/
 
 .nav-button-corner-style-rounded.enable-nav-button #headerNav nav>div:not(.folder):last-child a,
@@ -61,38 +61,48 @@ Main, dropdown & mobile nav
 }
 
 /*******************************************************
+Page margin correction
+*******************************************************/
+#page {
+	margin-top: -130px;
+}
+
+/*******************************************************
 Media Queries
 *******************************************************/
 @media only screen and (min-width: 717px) {
-  /*Nav positioning*/
-  #header {
-    top: 30em;
-  }
+	/*Nav positioning*/
+	#header {
+		top: 30em;
+	}
 }
 @media only screen and (max-width: 641px) {
-  /*Nav positioning*/
-  #header {
-    top: 25.75em;
-  }
-  .view-list .banner-thumbnail-wrapper,
-  .collection-type-page .banner-thumbnail-wrapper,
-  .collection-type-index .banner-thumbnail-wrapper {
-      height: 238px;
-  }
+	/*Nav positioning*/
+	#header {
+		top: 25.75em;
+	}
+	.view-list .banner-thumbnail-wrapper,
+	.collection-type-page .banner-thumbnail-wrapper,
+	.collection-type-index .banner-thumbnail-wrapper {
+			height: 238px;
+	}
+	#page {
+		margin-top: -90px;
+	}
 }
 @media only screen and (max-width: 640px) {
-  /*Nav positioning*/
-  #header {
-    top: 22.75em;
-  }
-  /*Page positioning*/
-  #page {
-  	padding: 0 20px;
-  	margin-top: -60px;
-  }
-  .view-list .banner-thumbnail-wrapper,
-  .collection-type-page .banner-thumbnail-wrapper,
-  .collection-type-index .banner-thumbnail-wrapper {
-    height: 183px;
-  }
+	/*Nav positioning*/
+	#header {
+		top: 22.75em;
+	}
+	/*Page positioning*/
+	#page {
+		padding: 0 20px;
+		margin-top: -60px;
+	}
+	.view-list .banner-thumbnail-wrapper,
+	.collection-type-page .banner-thumbnail-wrapper,
+	.collection-type-index .banner-thumbnail-wrapper {
+		height: 183px;
+	}
 }
