@@ -1,9 +1,41 @@
 /*******************************************************
-Positioning the inner menu nav
+General Styles
 *******************************************************/
+
+/*-------------------Button Styles-------------------*/
+
+/*Main header button*/
+body:not(.collection-type-gallery).banner-button-style-raised .desc-wrapper p:last-child>a {
+	border-radius: 5px;
+  	box-shadow: 0 4px 0 0 #143f68;
+	-moz-box-shadow: 0 4px 0 0 #143f68;
+	-webkit-box-shadow: 0 4px 0 0 #143f68;
+}
+
+/*Button border radius*/
+.small-button-shape-rounded .sqs-block-button .sqs-block-button-element--small,
+.medium-button-shape-rounded .sqs-block-button .sqs-block-button-element--medium,
+.large-button-shape-rounded .sqs-block-button .sqs-block-button-element--large,
+input.button.sqs-system-button.sqs-editable-button {
+	border-radius: 5px;
+}
+
+/*Small button box-shadow*/
+.small-button-style-raised .sqs-block-button .sqs-block-button-element--small,
+input.button.sqs-system-button.sqs-editable-button {
+	box-shadow: 0 4px 0 0 #143f68;
+	-moz-box-shadow: 0 4px 0 0 #143f68;
+	-webkit-box-shadow: 0 4px 0 0 #143f68;
+}
+
+/*******************************************************
+Header
+*******************************************************/
+
+/*Positioning the inner menu nav*/
 .header-inner {
-	width: 960px;
-	padding: 20px 20px;
+  width: 960px;
+  padding: 20px 20px;
 }
 
 /*******************************************************
@@ -34,6 +66,11 @@ Positioning & sizing the hero image area
 	top: -100px;
 	padding: 163px 0;
 	height: 314px;
+}
+
+/*hero text*/
+.desc-wrapper {
+	padding: 0px;
 }
 
 /*******************************************************
@@ -68,6 +105,31 @@ Page margin correction
 	padding: 0 32px 96px;
 }
 
+/*******************************************************
+Footer
+*******************************************************/
+#preFooter {
+  border-top: 1px solid #333;
+}
+
+.footer-inner {
+  padding: 64px 32px;
+  font-size: 13px;
+}
+
+#footer .html-block a, #footer .html-block a:visited {
+  color: #3476b5;
+  border-bottom: 0px solid #333;
+  text-decoration: underline;
+}
+
+/*******************************************************
+Home Page
+*******************************************************/
+img[src*="icon"] {
+    background-color: #3476b5;
+    border-radius: 5px;
+}
 /*******************************************************
 Media Queries
 *******************************************************/
