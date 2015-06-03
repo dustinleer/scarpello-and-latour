@@ -64,7 +64,8 @@ Main, dropdown & mobile nav
 Page margin correction
 *******************************************************/
 #page {
-	margin-top: -130px;
+	margin-top: -70px;
+	padding: 0 32px 96px;
 }
 
 /*******************************************************
@@ -85,9 +86,6 @@ Media Queries
 	.collection-type-page .banner-thumbnail-wrapper,
 	.collection-type-index .banner-thumbnail-wrapper {
 			height: 238px;
-	}
-	#page {
-		margin-top: -90px;
 	}
 }
 @media only screen and (max-width: 640px) {
