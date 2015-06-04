@@ -7,7 +7,7 @@ General Styles
 /*Main header button*/
 body:not(.collection-type-gallery).banner-button-style-raised .desc-wrapper p:last-child>a {
 	border-radius: 5px;
-		box-shadow: 0 4px 0 0 #143f68;
+	box-shadow: 0 4px 0 0 #143f68;
 	-moz-box-shadow: 0 4px 0 0 #143f68;
 	-webkit-box-shadow: 0 4px 0 0 #143f68;
 }
@@ -43,6 +43,10 @@ input.button.sqs-system-button.sqs-editable-button {
 /*******************************************************
 Header
 *******************************************************/
+/*Logo margin*/
+#header #logoImage {
+	margin-right: 40px;
+}
 
 /*Positioning the inner menu nav*/
 .header-inner {
@@ -119,15 +123,51 @@ Main, dropdown & mobile nav
 	background-color: rgba(52, 118, 181, 1);
 }
 
-/*#headerNav nav a:hover,
-#sidecarNav nav a:hover,
-#headerNav nav a:visited:hover,
-#sidecarNav nav a:visited:hover,
-#headerNav nav label:hover,
-#sidecarNav nav label:hover {
-	color: aqua;
-}*/
+#headerNav nav .subnav {
+	background-color: #3476b5;
+	border: 1px solid #21496F;
+	width: 118px;
+	text-align: center;
+}
 
+/*Nav before hover and active*/
+#headerNav nav a,
+#headerNav nav a,
+#headerNav nav label,
+#sidecarNav nav a,
+#sidecarNav nav a,
+#headerNav nav .active>a,
+#sidecarNav nav .active>a,
+#headerNav nav .active>a,
+#sidecarNav nav .active>a,
+#headerNav nav .active>label,
+#sidecarNav nav .active>label {
+	border-top: 1px solid rgba(0, 0, 0, 0);
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+/*Nav hover and active*/
+#headerNav nav a:hover,
+#headerNav nav a:visited:hover,
+#headerNav nav label:hover,
+#sidecarNav nav a:hover,
+#sidecarNav nav a:visited:hover,
+#headerNav nav .active>a,
+#sidecarNav nav .active>a,
+#headerNav nav .active>a:visited,
+#sidecarNav nav .active>a:visited,
+#headerNav nav .active>label,
+#sidecarNav nav .active>label {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+/*Nav padding*/
+body:not(.force-mobile-nav) .nav-wrapper nav>div {
+	margin: 0 5px;
+}
+
+/*Call to action nav button*/
 .nav-button-corner-style-rounded.enable-nav-button #headerNav nav>div:not(.folder):last-child a,
 .nav-button-corner-style-rounded.enable-nav-button #sidecarNav nav>div:not(.folder):last-child a {
 	border-radius: 5px;
@@ -165,8 +205,8 @@ Home Page
 *******************************************************/
 /*Icon background*/
 img[src*="icon"] {
-		background-color: #3476b5;
-		border-radius: 5px;
+	background-color: #3476b5;
+	border-radius: 5px;
 }
 
 /*Blog post image border*/
@@ -251,5 +291,4 @@ Media Queries
 		top: -100px;
 		height: 185px;
 	}
-
 }
