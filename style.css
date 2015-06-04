@@ -7,7 +7,7 @@ General Styles
 /*Main header button*/
 body:not(.collection-type-gallery).banner-button-style-raised .desc-wrapper p:last-child>a {
 	border-radius: 5px;
-	box-shadow: 0 4px 0 0 #143f68;
+		box-shadow: 0 4px 0 0 #143f68;
 	-moz-box-shadow: 0 4px 0 0 #143f68;
 	-webkit-box-shadow: 0 4px 0 0 #143f68;
 }
@@ -34,7 +34,7 @@ Header
 
 /*Positioning the inner menu nav*/
 .header-inner {
-	width: 75%;
+	width: 63.5%;
 }
 
 /*******************************************************
@@ -70,6 +70,32 @@ Positioning & sizing the hero image area
 /*hero text*/
 .desc-wrapper {
 	padding: 0px;
+}
+
+/*Blog Posts Header Images*/
+.sqs-featured-posts-gallery {
+	top: -100px;
+	position: relative;
+	height: 640px;
+}
+
+.sqs-featured-posts-gallery .gallery-wrapper .posts {
+	height: 640px !important;
+}
+
+.sqs-featured-posts-gallery .gallery-wrapper, 
+.gallery-wrapper .posts .post {
+	height: 640px;
+}
+
+.sqs-featured-posts-gallery .gallery-wrapper .posts .post {
+	height: 640px !important;
+}
+
+/*Single Post Header Images*/
+.collection-type-blog.view-item .banner-thumbnail-wrapper {
+	top: -100px;
+	height: 380px;
 }
 
 /*******************************************************
@@ -126,8 +152,8 @@ Footer
 Home Page
 *******************************************************/
 img[src*="icon"] {
-	background-color: #3476b5;
-	border-radius: 5px;
+		background-color: #3476b5;
+		border-radius: 5px;
 }
 /*******************************************************
 Media Queries
@@ -152,16 +178,46 @@ Media Queries
 @media only screen and (max-width: 640px) {
 	/*Nav positioning*/
 	#header {
-		top: 27.25em;
+		top: 23.05em;
+	}
+		.desc-wrapper {
+		padding: 0;
+		margin-top: -50px;
+	}
+	.view-list .banner-thumbnail-wrapper,
+	.collection-type-page .banner-thumbnail-wrapper,
+	.collection-type-index .banner-thumbnail-wrapper {
+		height: 120px;
 	}
 	/*Page positioning*/
 	#page {
 		padding: 0 20px;
 		margin-top: -60px;
 	}
-	.view-list .banner-thumbnail-wrapper,
-	.collection-type-page .banner-thumbnail-wrapper,
-	.collection-type-index .banner-thumbnail-wrapper {
-		height: 183px;
+	/*Blog headers*/
+	.sqs-featured-posts-gallery {
+		top: -100px;
+		position: relative;
+		height: 445px;
 	}
+
+	.sqs-featured-posts-gallery .gallery-wrapper .posts {
+		height: 445px !important;
+	}
+
+	.sqs-featured-posts-gallery .gallery-wrapper, 
+	.gallery-wrapper .posts .post {
+		height: 445px;
+	}
+
+	.sqs-featured-posts-gallery .gallery-wrapper .posts .post {
+		height: 445px !important;
+	}
+
+	/*Single Post Header Images*/
+	.collection-type-blog.view-item .banner-thumbnail-wrapper {
+		top: -100px;
+		height: 185px;
+	}
+
 }

@@ -31,6 +31,8 @@ div#navigation-bottom {
 /*******************************************
 Hero Image styles
 ********************************************/
-body.page-thumbnail-as-banner #page-thumb {
+body.page-thumbnail-as-banner #page-thumb,
+body.has-default-bg-image .banner-overlay,
+body.has-page-thumbnail .banner-overlay {
 	height: 550px;
 }
