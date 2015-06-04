@@ -28,6 +28,18 @@ input.button.sqs-system-button.sqs-editable-button {
 	-webkit-box-shadow: 0 4px 0 0 #143f68;
 }
 
+/*404 Button Styles*/
+.button-style-raised [data-slice-type="buttons"] a,
+.button-style-raised .sqs-slice-custom-form a,
+.button-style-raised .form-wrapper input[type=submit] {
+	background: #3476b5;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 4px 0 0 #143f68;
+	-moz-box-shadow: 0 4px 0 0 #143f68;
+	-webkit-box-shadow: 0 4px 0 0 #143f68;	
+}
+
 /*******************************************************
 Header
 *******************************************************/
@@ -129,6 +141,12 @@ img[src*="icon"] {
 	background-color: #3476b5;
 	border-radius: 5px;
 }
+
+/*Blog post image border*/
+.sqs-block-summary-v2 .img-wrapper {
+	border: 1px solid rgba(26,26,26,.15);
+}
+
 /*******************************************************
 Media Queries
 *******************************************************/
@@ -136,6 +154,12 @@ Media Queries
 	/*Nav positioning*/
 	#header {
 		top: 36em;
+	}
+}
+@media only screen and (min-width: 641px) {
+	#header #logoWrapper, #header #logoImage {
+		width: 200px;
+		margin-right: 20px;
 	}
 }
 @media only screen and (max-width: 641px) {
