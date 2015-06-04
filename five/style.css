@@ -1,0 +1,25 @@
+/*******************************************
+Nav styles
+********************************************/
+/*Nav coloring & z-index*/
+#navigation-top, #navigation-bottom {
+	background-color: rgba(52, 118, 181, 0.8);
+	z-index: 1000;
+}
+
+/*Nav positioning*/
+div#navigation-bottom {
+	top: -5px;
+	position: relative;
+}
+
+#page-header-wrapper {
+	background-color: rgba(255,255,255,0);
+}
+
+/*******************************************
+Hero Image styles
+********************************************/
+body.page-thumbnail-as-banner #page-thumb {
+	height: 550px;
+}
