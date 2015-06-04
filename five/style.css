@@ -1,3 +1,8 @@
+/*Page wrap*/
+#page-header-wrapper {
+	background-color: rgba(255,255,255,0);
+}
+
 /*******************************************
 Nav styles
 ********************************************/
@@ -13,8 +18,14 @@ div#navigation-bottom {
 	position: relative;
 }
 
-#page-header-wrapper {
-	background-color: rgba(255,255,255,0);
+/*Nav margins*/
+.horizontal-navigation-bar nav ul li {
+	margin-right: 22px;
+}
+
+/*subnav margin correction*/
+.horizontal-navigation-bar nav.main-nav .folder .subnav li {
+	margin-right: 0px;
 }
 
 /*******************************************
