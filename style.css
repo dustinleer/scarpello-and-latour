@@ -123,11 +123,34 @@ Main, dropdown & mobile nav
 	background-color: rgba(52, 118, 181, 1);
 }
 
+/*Sub nav and folders*/
 #headerNav nav .subnav {
 	background-color: #3476b5;
-	border: 1px solid #21496F;
-	width: 118px;
+	border: 1px solid #21496f;
 	text-align: center;
+}
+
+/*Traiangle*/
+/*#headerNav nav .subnav::before {
+	content: "";
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #21496f;
+	position: relative;
+	top: -40px;
+}*/
+
+#headerNav nav .folder .subnav a:hover,
+#headerNav nav .folder .subnav a:active {
+	color: #21496f;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(255, 255, 255, 0);
+	-webkit-transition: color .1s 0s ease-in-out;
+	-moz-transition: color .1s 0s ease-in-out;
+	-ms-transition: color .1s 0s ease-in-out;
+	-o-transition: color .1s 0s ease-in-out;
+	transition: background-color .1s 0s ease-in-out;
+	cursor: pointer;
 }
 
 /*Nav before hover and active*/
