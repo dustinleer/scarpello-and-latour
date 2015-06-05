@@ -125,9 +125,9 @@ Main, dropdown & mobile nav
 
 /*Sub nav and folders*/
 #headerNav nav .subnav {
-	background-color: #3476b5;
+	background-color: rgba(52,118,181,.95);
 	border: 1px solid #21496f;
-	text-align: center;
+	text-align: left;
 }
 
 /*Traiangle*/
@@ -143,14 +143,15 @@ Main, dropdown & mobile nav
 #headerNav nav .folder .subnav a:hover,
 #headerNav nav .folder .subnav a:active {
 	color: #21496f;
-	background-color: rgba(255, 255, 255, 0.8);
-	border: 1px solid rgba(255, 255, 255, 0);
-	-webkit-transition: color .1s 0s ease-in-out;
-	-moz-transition: color .1s 0s ease-in-out;
-	-ms-transition: color .1s 0s ease-in-out;
-	-o-transition: color .1s 0s ease-in-out;
-	transition: background-color .1s 0s ease-in-out;
 	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-top: 1px solid rgba(255, 255, 255, 0);
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+	transition: background-color .1s 0s ease-in-out;
+		-webkit-transition: color .1s 0s ease-in-out;
+		-moz-transition: color .1s 0s ease-in-out;
+		-ms-transition: color .1s 0s ease-in-out;
+		-o-transition: color .1s 0s ease-in-out;
 }
 
 /*Nav before hover and active*/
@@ -193,8 +194,39 @@ body:not(.force-mobile-nav) .nav-wrapper nav>div {
 /*Call to action nav button*/
 .nav-button-corner-style-rounded.enable-nav-button #headerNav nav>div:not(.folder):last-child a,
 .nav-button-corner-style-rounded.enable-nav-button #sidecarNav nav>div:not(.folder):last-child a {
+	border: 1px solid #fff;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
+}
+
+.nav-button-corner-style-rounded.enable-nav-button #headerNav nav>div:not(.folder):last-child a:hover,
+.nav-button-corner-style-rounded.enable-nav-button #sidecarNav nav>div:not(.folder):last-child a:hover {
+	color: #143f68;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+
+/*On Page Sub Nav*/
+.category-nav li.active-link:not(.all) a,
+.folder-nav li.active-link:not(.all) a,
+.category-nav li.active-link:not(.all) a:visited,
+.folder-nav li.active-link:not(.all) a:visited {
+	color: #3476b5;
+}
+
+.category-nav li.active-link:not(.all) a::before,
+.folder-nav li.active-link:not(.all) a::before {
+	content: "» ";
+	color: #3476b5;
+}
+
+.category-nav a:hover,
+.folder-nav a:hover,
+.category-nav a:visited:hover,
+.folder-nav a:visited:hover {
+	color: #3476b5;
+	font-style: italic;
 }
 
 /*******************************************************
