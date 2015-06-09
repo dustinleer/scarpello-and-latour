@@ -52,7 +52,7 @@ Header
 
 /*Positioning the inner menu nav*/
 .header-inner {
-	width: 63.5%;
+	width: 100%;
 }
 
 /*******************************************************
@@ -189,9 +189,9 @@ Main, dropdown & mobile nav
 }
 
 /*Nav padding*/
-body:not(.force-mobile-nav) .nav-wrapper nav>div {
+/*body:not(.force-mobile-nav) .nav-wrapper nav>div {
 	margin: 0 5px;
-}
+}*/
 
 /*Call to action nav button*/
 .nav-button-corner-style-rounded.enable-nav-button #headerNav nav>div:not(.folder):last-child a,
@@ -407,7 +407,7 @@ Media Queries
 	#header {
 		top: 23.05em;
 	}
-		.desc-wrapper {
+	.desc-wrapper {
 		padding: 0;
 		margin-top: -50px;
 	}
@@ -416,31 +416,29 @@ Media Queries
 	.collection-type-index .banner-thumbnail-wrapper {
 		height: 120px;
 	}
+
 	/*Page positioning*/
 	#page {
 		padding: 0 20px;
 		margin-top: -60px;
 	}
+
 	/*Blog headers*/
 	.sqs-featured-posts-gallery {
 		top: -100px;
 		position: relative;
 		height: 445px;
 	}
-
 	.sqs-featured-posts-gallery .gallery-wrapper .posts {
 		height: 445px !important;
 	}
-
 	.sqs-featured-posts-gallery .gallery-wrapper, 
 	.gallery-wrapper .posts .post {
 		height: 445px;
 	}
-
 	.sqs-featured-posts-gallery .gallery-wrapper .posts .post {
 		height: 445px !important;
 	}
-
 	/*Single Post Header Images*/
 	.collection-type-blog.view-item .banner-thumbnail-wrapper {
 		top: -100px;
