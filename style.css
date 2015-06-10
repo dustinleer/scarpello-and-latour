@@ -42,6 +42,10 @@ input.button.sqs-system-button.sqs-editable-button {
 	-webkit-box-shadow: 0 4px 0 0 #143f68;	
 }
 
+.sqs-block-horizontalrule hr {
+	margin: 15px 0;
+}
+
 /*******************************************************
 Header
 *******************************************************/
@@ -127,19 +131,23 @@ Main, dropdown & mobile nav
 
 /*Sub nav and folders*/
 #headerNav nav .subnav {
-	background-color: rgba(52,118,181,.95);
-	border: 1px solid #21496f;
+	background-color: rgba(33, 73, 111, .95);
+	/*border: 1px solid #21496f;*/
 	text-align: left;
 }
+
+/*html:not(.touch-styles) body:not(.force-mobile-nav) .nav-wrapper .folder .subnav {
+	left: 0em;
+}*/
 
 /*Traiangle*/
 /*#headerNav nav .subnav::before {
 	content: "";
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-bottom: 10px solid #21496f;
+	border-bottom: 10px solid rgba(33, 73, 111, .95);
 	position: relative;
-	top: -40px;
+	top: -35px;
 }*/
 
 #headerNav nav .folder .subnav a:hover,
@@ -229,6 +237,23 @@ Main, dropdown & mobile nav
 .folder-nav a:visited:hover {
 	color: #3476b5;
 	font-style: italic;
+}
+
+/*******************************************************
+Annoucement Bar
+*******************************************************/
+.sqs-announcement-bar {
+	background: #3476b5;
+}
+
+.sqs-announcement-bar-close {
+	visibility: hidden;
+}
+
+/*Text attributes*/
+.sqs-announcement-bar-text p {
+	font-size: 16px;
+	font-weight: 500;
 }
 
 /*******************************************************
@@ -323,7 +348,12 @@ aside > div > div > div > div > div > div > .form-inner-wrapper > form > div > i
 Footer
 *******************************************************/
 #preFooter {
-	border-top: 1px solid #333;
+	border-top: 1px solid rgba(51,51,51,.15);
+}
+
+.pre-footer-inner .sqs-layout {
+	padding: 32px;
+	padding-bottom: 0;
 }
 
 .footer-inner {
@@ -346,13 +376,19 @@ img[src*="icon"] {
 	border-radius: 5px;
 }
 
+/*Block Quote*/
+blockquote#yui_3_17_2_2_1433955293112_2862 {
+	font-size: 1.45em !important;
+	line-height: 1.2em !important;
+}
+
 /*Blog post image border*/
 .sqs-block-summary-v2 .img-wrapper {
 	border: 1px solid rgba(26,26,26,.15);
 }
 
 /*******************************************************
-About Pages
+About Page
 *******************************************************/
 /*Profile Images*/
 img[alt*="profile.jpg"] {
@@ -367,6 +403,15 @@ div#block-yui_3_17_2_3_1433530507830_27565,
 div#block-yui_3_17_2_2_1433530980860_21410,
 div#block-yui_3_17_2_2_1433530980860_23127 {
 	border-left: 4px solid #63b3ff !important;
+}
+
+/*******************************************************
+Contact Page
+*******************************************************/
+/*Address Info Column*/
+div#yui_3_17_2_4_1433944766153_3120 {
+	border-left: 2px solid #3476b5;
+	border-right: 2px solid #3476b5;
 }
 
 /*******************************************************
