@@ -269,8 +269,7 @@ Blog
 *******************************************************/
 /*Blog main area width*/
 .collection-type-blog #content {
-	width: 67.4375%;
-	width: calc(95% - 255px) !important;
+	width: 67.4375% !important;
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 5%;
@@ -312,7 +311,7 @@ body:not(.button-style-default).button-corner-style-rounded .sqs-editable-button
 Right Sidebar
 *******************************************************/
 #rightSidebar {
-	padding: 15px;
+	padding: 15px !important;
 	background: #143f68;
 	border-radius: 5px;
 	color: #fff;
@@ -430,6 +429,21 @@ div#yui_3_17_2_4_1433944766153_3120 {
 /*******************************************************
 Media Queries
 *******************************************************/
+@media only screen and (max-width: 990px) {
+	/*Blog main area width*/
+	.collection-type-blog #content {
+		width: 98.5% !important;
+	}
+	#rightSidebar {
+		width: 100%;
+		padding: 15px !important;
+		background: #143f68;
+		border-radius: 5px;
+		color: #fff;
+		margin: 20px 0;
+	}
+}
+
 @media only screen and (min-width: 717px) {
 	/*Nav positioning*/
 	#header {
