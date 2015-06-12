@@ -390,8 +390,7 @@ blockquote#yui_3_17_2_2_1433955293112_2862 {
 About Page
 *******************************************************/
 /*Profile Images*/
-img[alt$="Scarpello"],
-img[alt$="LaTour"] {
+img[src*="profile.jpg"] {
 	border: 5px solid #3476b5;
 	width: 238px !important;
 	border-radius: 50%;
