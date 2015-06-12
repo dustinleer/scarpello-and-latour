@@ -390,7 +390,8 @@ blockquote#yui_3_17_2_2_1433955293112_2862 {
 About Page
 *******************************************************/
 /*Profile Images*/
-img[alt*="profile.jpg"] {
+img[alt$="Scarpello"],
+img[alt$="LaTour"] {
 	border: 5px solid #3476b5;
 	width: 238px !important;
 	border-radius: 50%;
@@ -402,6 +403,23 @@ div#block-yui_3_17_2_3_1433530507830_27565,
 div#block-yui_3_17_2_2_1433530980860_21410,
 div#block-yui_3_17_2_2_1433530980860_23127 {
 	border-left: 4px solid #63b3ff !important;
+}
+
+/*******************************************************
+Blog Page
+*******************************************************/
+/*Top Page Filters*/
+.view-list .filter-heading {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 1020px;
+	margin: 0 auto;
+	padding: 32px;
+	/* border: 1px solid black; */
+	display: block;
+	top: -90px;
+	position: relative;
 }
 
 /*******************************************************
